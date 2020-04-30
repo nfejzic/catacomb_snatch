@@ -1,0 +1,17 @@
+pub struct Mask {
+    ENTITY_MOVABLE: i32,
+    ENTITY_DRAWABLE: i32,
+    ENTITY_VISIBLE: i32,
+    ENTITY_ANIMATED: i32,
+    ENTITY_DYNAMIC: i32,
+    ENTITY_STATIC: i32,
+}
+
+pub static MASK: Mask = Mask {
+    ENTITY_MOVABLE: 1 << 0,
+    ENTITY_DRAWABLE: 1 << 1,
+    ENTITY_VISIBLE: 1 << 2,
+    ENTITY_ANIMATED: 1 << 3,
+    ENTITY_DYNAMIC: 1 << 4,
+    ENTITY_STATIC: 1 << 5,
+};
